@@ -17,5 +17,9 @@ let divi = num1/num2
 let power = num1**num2
 let remainder = num1%num2
 
-console.log(add,sub,multi,divi,power,remainder)
+/* Increment & decremet Operator */
+// add++
+// add--
+
+// console.log(add,sub,multi,divi,power,remainder)
 
