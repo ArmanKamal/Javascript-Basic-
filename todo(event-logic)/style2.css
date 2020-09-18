@@ -43,3 +43,18 @@ button{
     right: 8px;
     cursor: pointer;
 }
+
+/* Form */
+
+form{
+    max-width: 200px;
+    margin: 40px auto;
+    background-color: #e3e3e3;
+    padding: 10px;
+}
+
+input{
+    display: block;
+    margin: 10px auto;
+    padding: 4px;
+}
