@@ -39,10 +39,28 @@ button.addEventListener('click', () =>{
 
 // Best way to delete event is using delegation 
 
-const lists = document.querySelector('ul')
+// const lists = document.querySelector('ul')
 
-lists.addEventListener('click', (e) =>{
-    if(e.target.tagName === 'LI'){
-        e.target.remove()
-    }
+// lists.addEventListener('click', (e) =>{
+//     if(e.target.tagName === 'LI'){
+//         e.target.remove()
+//     }
+// })  
+
+const copy = document.querySelector('.copy-me')
+
+copy.addEventListener('copy', () => {
+    console.log('Copyright dude ')
+})
+
+const box = document.querySelector('.box')
+
+box.addEventListener('mousemove', e => {
+     
+   box.textContent = `Mouse X ${e.offsetX}, Mouse Y ${e.offsetY}`
+    
+})
+
+document.addEventListener('wheel', e =>{
+    console.log(e)
 })
