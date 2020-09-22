@@ -73,19 +73,59 @@
 //  console.log(result)
 
 
- const scores = [
-     {player: 'mario', score:60},
-     {player: 'yoshi', score:30},
-     {player: 'mario', score:70},
-     {player: 'john', score:60},
- ]
+//  const scores = [
+//      {player: 'mario', score:60},
+//      {player: 'yoshi', score:30},
+//      {player: 'mario', score:70},
+//      {player: 'john', score:60},
+//  ]
 
- const marioTotal = scores.reduce((acc,curr) => {
-     if(curr.player == 'mario'){
-         acc += curr.score
-     }
+//  const marioTotal = scores.reduce((acc,curr) => {
+//      if(curr.player == 'mario'){
+//          acc += curr.score
+//      }
 
-     return acc
- },0)
+//      return acc
+//  },0)
 
- console.log(marioTotal)
+//  console.log(marioTotal)
+
+ // Sort Function  // 
+
+ scores = ['mario', 'luigi', 'hashirama', 'yoshi']
+
+ console.log(scores.sort())
+
+ scores.reverse()
+ 
+ console.log(scores)
+
+ // Sorting object highest to lowest
+ 
+//  const plaScores = [
+//      {player: 'mario', score:90},
+//      {player: 'yoshi', score:30},
+//      {player: 'mario', score:70},
+//      {player: 'john', score:60},
+//  ]
+
+//  plaScores.sort((a,b) => {
+//     if (a.score > b.score){
+//         return -1;
+//     }
+
+//     else if (a.score > b.score){
+//         return 1;
+//     }
+//     else{
+//         return 0;
+//     }
+//  })
+
+//  // Shorter way // 
+
+//  plaScores.sort((a,b) => {
+//      return b.score - a.score
+//  })
+
+//  console.log(plaScores)
